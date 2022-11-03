@@ -14,6 +14,7 @@ html, body {
     flex-direction: column;
     min-height: 100vh;
 }
+/* starting at the top of the page, with navigation bar */
 .topnav {
     margin: auto;
     text-align: right;
@@ -26,18 +27,19 @@ html, body {
     font-family: "Press Start 2P";
     font-size: 12px;
     text-transform: uppercase;
+
 }
 .topnav a {
     padding: 20px 20px 20px 20px;  
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-
+/* When mouse is hovered over it changes the background to a gradient */
 .topnav a:hover {
     background: linear-gradient(to right, #259650, #a2e1b7);
     color: #fff;
 }
-
+/* home page name container */
 .banner-name-container{
     position:absolute;
     left:50%;
@@ -48,6 +50,7 @@ html, body {
     vertical-align: middle;
     
 }
+/* css for actual name with animation */
 h1 a{
     margin:0;
     text-align: center;
@@ -64,11 +67,12 @@ h1 a{
     text-align: center;
     
 }
+
+/* get rid of hyperlink underline */
 a {
     text-decoration: none;
 }
-
-
+/* animation */
 @keyframes change-color {
     25% {
           color: #12814b;
@@ -83,10 +87,14 @@ a {
      color: #a2e1b7;
    }
 }
+
+/* about me page starting with top text */
 .about-me {
     text-align: center;
     font-family: 'Major Mono Display';
+    color:rgb(0, 37, 17);
 }
+/* picture of me with rounded border */
 .picture img{
     display: flex;
     justify-content: center;
@@ -97,19 +105,68 @@ a {
     object-fit: cover;
     border-radius: 50%;
     padding:2%;
+    
 }
+/* added a border to description and shadow */
 .description {
     display: flex;
     margin: 2vh;
     border:1px;
     border-radius:5px;
     border-style: solid;
-    border-color: rgb(22, 46, 33);
+    border-color: white;
     padding: 5vh;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    color: rgb(22, 46, 33);
+    color: rgb(0, 37, 17);
+    box-shadow: 0 4px 2px #086c3f;
 
+}
+/* resume modal button */
+.button-container {
+    display: flex;
+    justify-content:  center;
+    position: relative;
+    min-height: 0;
+    margin: 0;
+}
+button {
+    background: linear-gradient(to right, #259650, #a2e1b7);
+    font-family: "Major Mono Display";
+    color: rgb(0, 37, 17);
+    font-size: 22px;
+    font-weight: bolder;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 4px 2px #086c3f;
+}
+/* inside modal text and close button */
+.modal {
+    background-color: rgba(0,0,0,0.4);
+	position: fixed;
+    top: 0;
+    left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	overflow: auto;
+    display:none;
+}
+.modal-textbox {
+    display: flex;   
+    background-color: #a2e1b7;
+    width: 400px;
+    max-width: 100%;
+    height: fit-content;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding:20px 35px;
+    box-shadow: 0 4px 2px #086c3f;
+}
+
+h2 {
+    font-family: 'Major Mono Display';
+    font-size: 20px;
 }
 
 .footer {

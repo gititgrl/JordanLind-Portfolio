@@ -116,12 +116,15 @@ a {
     border-style: solid;
     border-color: white;
     padding: 5vh;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Rajdhani';
+    font-size: 18px;
+    line-height: 1.5;
     text-align: center;
     color: rgb(0, 37, 17);
     box-shadow: 0 4px 2px #086c3f;
 
 }
+
 /* resume modal button */
 .button-container {
     display: flex;
@@ -156,9 +159,10 @@ a {
 .modal-textbox {
     display: flex;   
     background-color: #a2e1b7;
-    width: 400px;
+    height: 100%;
+    width: 100%;
     max-width: 100%;
-    height: fit-content;
+    height:fit-content;
     border-radius: 5px;
     margin: 10px auto;
     padding:20px 35px;

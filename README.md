@@ -39,3 +39,7 @@ https://blog.hubspot.com/website/css-animation-not-working
 Contact form using smtpjs
 https://www.youtube.com/watch?v=sGQSz22U8VM&ab_channel=EasyTutorials
 
+https://stackoverflow.com
+
+MDN Web Docs
+https://developer.mozilla.org

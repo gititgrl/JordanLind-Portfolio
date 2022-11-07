@@ -1,7 +1,9 @@
 //About me Page
 //Button to open and close Resume
 const openBtn = document.getElementById('openResume')
+console.log(openBtn);
 const closeBtn = document.getElementById('closeResume')
+console.log(closeBtn);
 
 //Modal element
 const modal = document.getElementsByClassName('modal')
@@ -19,9 +21,12 @@ const closeModal = () => {
     modal[i].style.display = 'none';
 }
 }
+
 //event listener to open modal at the bottom!
 openBtn.addEventListener('click', openModal)
 closeBtn.addEventListener('click', closeModal)
+
+
 
 function sendEmail() {
     Email.send({
@@ -40,3 +45,16 @@ function sendEmail() {
         document.getElementById("note").value,
     }).then((message) => alert("Message Sent!"));
   }
+
+  //Hover over projects to change text
+const projectText1 = document.getElementById("projectText1")
+function comingSoon () {
+    projectText1.innerText = "Coming Soon!";
+    setTimeout(()=> {
+        projectText1.innerText = "Project 1";
+    },3000);
+}
+
+projectText1.addEventListener('mouseover', comingSoon)
+
+

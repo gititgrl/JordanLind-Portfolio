@@ -10,6 +10,6 @@ function comingSoon () {
 }
 
 //eventlistener mouseover
-projectText1.addEventListener('mouseover', comingSoon)
+projectText1.addEventListener('click', comingSoon)
 
 

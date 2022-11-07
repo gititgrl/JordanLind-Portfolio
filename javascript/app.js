@@ -8,7 +8,8 @@ console.log(closeBtn);
 //Modal element
 const modal = document.getElementsByClassName('modal')
 
-//Fucntion to change modal display to block
+
+//Function to change modal display to block
 //For loop to find display in modal css
 const openModal = () => {
     for (i = 0; i<modal.length; i++) {
@@ -27,7 +28,7 @@ openBtn.addEventListener('click', openModal)
 closeBtn.addEventListener('click', closeModal)
 
 
-
+//Sending contact info function using smtp
 function sendEmail() {
     Email.send({
       Host: "smtp.gmail.com",
@@ -46,15 +47,9 @@ function sendEmail() {
     }).then((message) => alert("Message Sent!"));
   }
 
-  //Hover over projects to change text
-const projectText1 = document.getElementById("projectText1")
-function comingSoon () {
-    projectText1.innerText = "Coming Soon!";
-    setTimeout(()=> {
-        projectText1.innerText = "Project 1";
-    },3000);
-}
 
-projectText1.addEventListener('mouseover', comingSoon)
+
+
+
 
 

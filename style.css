@@ -285,7 +285,7 @@
     border-radius: 20px;
     font-family: "Rajdhani";
   }
-  
+  /* projects page with button */
   .projects-container {
     display: flex;
     justify-content: space-evenly;
@@ -312,5 +312,25 @@
     padding: 4rem;
     cursor: pointer;
     position: relative;
+    transform: rotate(-50%, -50%);
+}
+  #projectText1:hover{
+    animation: rotate 2s linear;
   }
-  
+  @keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+  }

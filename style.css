@@ -3,66 +3,64 @@
     margin: 0;
     padding: 0;
     /* border-color: black;
-    border-style: solid; */
-}
-@media (min-width:600px) {
+      border-style: solid; */
+  }
+  @media (min-width: 600px) {
     .column {
-        width: 50%;
+      width: 50%;
     }
-}
-html, body {
+  }
+  html,
+  body {
     overflow: auto;
     background: linear-gradient(to right, #259650, #a2e1b7);
     flex-direction: column;
     min-height: 100vh;
-}
-/* starting at the top of the page, with navigation bar */
-.topnav {
+  }
+  /* starting at the top of the page, with navigation bar */
+  .topnav {
     margin: auto;
     background: linear-gradient(to right, #259650, #a2e1b7);
-    width:100%;
+    width: 100%;
     height: 30%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-content: stretch;
-    padding: 5px; 
-    
-
-}
-.topnav a {
+    padding: 5px;
+  }
+  .topnav a {
     display: flex;
-    padding: 2% 2% 2% 2%;   
+    padding: 2% 2% 2% 2%;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: "Press Start 2P";
     font-size: 12px;
     text-transform: uppercase;
-}
-/* When mouse is hovered over it changes the background to a gradient */
-.topnav a:hover {
+  }
+  /* When mouse is hovered over it changes the background to a gradient */
+  .topnav a:hover {
     background: linear-gradient(to right, #259650, #a2e1b7);
     color: #fff;
-}
-/* home page name container */
-.banner-name-container{
-    position:absolute;
-    left:50%;
-    top:50%;
+  }
+  /* home page name container */
+  .banner-name-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
     align-items: center;
     justify-content: center;
     vertical-align: middle;
-    
-}
-/* css for actual name with animation */
-h1 a{
-    margin:0;
+  }
+  /* css for actual name with animation */
+  h1 a {
+    margin: 0;
     text-align: center;
     top: 50%;
     left: 50%;
     font-family: "Major Mono Display";
-    color:#a2e1b7;
+    color: #a2e1b7;
     animation-name: change-color;
     animation-duration: 8s;
     animation-delay: 2s;
@@ -70,37 +68,36 @@ h1 a{
     font-size: 50px;
     font-weight: 600;
     text-align: center;
-    
-}
-
-/* get rid of hyperlink underline */
-a {
+  }
+  
+  /* get rid of hyperlink underline */
+  a {
     text-decoration: none;
-}
-/* animation */
-@keyframes change-color {
+  }
+  /* animation */
+  @keyframes change-color {
     25% {
-          color: #12814b;
-   }
-   50% {
-     color: #086c3f;
-   }
-   75% {
-     color: #259650;
-   }
-   100% {
-     color: #a2e1b7;
-   }
-}
-
-/* about me page starting with top text */
-.about-me {
+      color: #12814b;
+    }
+    50% {
+      color: #086c3f;
+    }
+    75% {
+      color: #259650;
+    }
+    100% {
+      color: #a2e1b7;
+    }
+  }
+  
+  /* about me page starting with top text */
+  .about-me {
     text-align: center;
-    font-family: 'Major Mono Display';
-    color:rgb(0, 37, 17);
-}
-/* picture of me with rounded border */
-.picture img{
+    font-family: "Major Mono Display";
+    color: rgb(0, 37, 17);
+  }
+  /* picture of me with rounded border */
+  .picture img {
     display: flex;
     justify-content: center;
     margin-left: auto;
@@ -109,37 +106,35 @@ a {
     width: 30vh;
     object-fit: cover;
     border-radius: 50%;
-    padding:2%;
-    
-}
-/* added a border to description and shadow */
-.description {
+    padding: 2%;
+  }
+  /* added a border to description and shadow */
+  .description {
     display: flex;
     margin: 2vh;
-    border:1px;
-    border-radius:5px;
+    border: 1px;
+    border-radius: 5px;
     border-style: solid;
     border-color: white;
     padding: 5vh;
-    font-family: 'Rajdhani';
+    font-family: "Rajdhani";
     font-size: 18px;
     line-height: 1.5;
     text-align: center;
     color: rgb(0, 37, 17);
     box-shadow: 0 4px 2px #086c3f;
-
-}
-
-/* resume modal button */
-.button-container {
+  }
+  
+  /* resume modal button */
+  .button-container {
     display: flex;
-    justify-content:  center;
+    justify-content: center;
     position: relative;
     min-height: 0;
     margin: 0;
     position: relative;
-}
-#openResume {
+  }
+  #openResume {
     display: flex;
     background: linear-gradient(to right, #259650, #a2e1b7);
     font-family: "Major Mono Display";
@@ -151,120 +146,119 @@ a {
     box-shadow: 0 4px 2px #086c3f;
     cursor: pointer;
     position: relative;
-}
-/* inside modal text and close button */
-.modal {
-    background-color: rgba(0,0,0,0.4);
-	position: fixed;
+  }
+  /* inside modal text and close button */
+  .modal {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
     top: 0;
     left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: 1;
-	overflow: auto;
-    display:none;
-}
-.modal-textbox {
-    display: flex;   
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+    min-width: 600px;
+  }
+  .modal-textbox {
+    display: flex;
     background-color: #a2e1b7;
     height: 100%;
     width: 100%;
     max-width: 100%;
-    height:fit-content;
+    height: fit-content;
     border-radius: 5px;
     margin: 10px auto;
-    padding:20px 35px;
+    padding: 20px 35px;
     box-shadow: 0 4px 2px #086c3f;
-}
-/* Jordans resume */
-h2 {
-    font-family: 'Major Mono Display';
+  }
+  /* Jordans resume */
+  h2 {
+    font-family: "Major Mono Display";
     font-size: 20px;
-}
-#modal-footer {
+  }
+  #modal-footer {
     text-align: right;
-}
-/* close resume button */
-#closeResume {
+  }
+  /* close resume button */
+  #closeResume {
     padding: 14px 18px;
-	background:linear-gradient(to right, #259650, #a2e1b7);
-	/* border: none; */
-	outline: none;
-	border-radius: 3px;
-	color: white;
-	font-family: 'Major Mono Display';
-	cursor: pointer;
-}
-.projects-container {
+    background: linear-gradient(to right, #259650, #a2e1b7);
+    /* border: none; */
+    outline: none;
+    border-radius: 3px;
+    color: white;
+    font-family: "Major Mono Display";
+    cursor: pointer;
+  }
+  .projects-container {
     display: flex;
     justify-content: space-evenly;
     align-content: center;
     flex-wrap: wrap;
-}
-.project {
-    flex-basis:auto;
+  }
+  .project {
+    flex-basis: auto;
     border: 4px;
-    border-radius:5px;
+    border-radius: 5px;
     border-style: solid;
     border-color: white;
-}
-h1 {
-    font-family: 'Major Mono Display';
+  }
+  h1 {
+    font-family: "Major Mono Display";
     text-align: center;
-
-}
-/* footers on all pages */
-.footer {  
+  }
+  /* footers on all pages */
+  .footer {
     position: sticky;
     flex-flow: column;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
     position: relative;
-    margin-top: 100%;  
+    margin-top: 100%;
     margin-bottom: 5%;
-}
-h4.more {
+  }
+  h4.more {
     font-family: "Press Start 2P";
     font-size: 12px;
-    color:#fff;
+    color: #fff;
     margin-bottom: 2vh;
-    display:flex;
+    display: flex;
     justify-content: center;
     text-transform: uppercase;
-}
-.footer-logos-container {
-    display:flex;
+  }
+  .footer-logos-container {
+    display: flex;
     text-align: center;
     justify-content: center;
-    
-}
-.footer-logos-container a {
+  }
+  .footer-logos-container a {
     font-family: "Major Mono Display";
     font-size: 12px;
     text-transform: lowercase;
-    padding-left: 10%; padding-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
     display: inline-block;
     text-decoration: none;
-    color:#fff
-}
-
-
-/* contact me div */
-.contact-container {
+    color: #fff;
+  }
+  
+  /* contact me div */
+  .contact-container {
     margin: 10% auto 0;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-form h1 {
-    color:#fff;
+  }
+  
+  form h1 {
+    color: #fff;
     margin-bottom: 20px;
-}
-
-form {
+  }
+  
+  form {
     background: #a2e1b7;
     display: flex;
     flex-direction: column;
@@ -272,23 +266,22 @@ form {
     width: 90%;
     max-width: 600px;
     border-radius: 10px;
-    
-}
-
-form input, form textarea {
-    border:0;
+  }
+  
+  form input,
+  form textarea {
+    border: 0;
     margin: 10px 0;
     padding: 20px;
     outline: none;
-    background:#fff;
+    background: #fff;
     font-size: 16px;
-    font-family: 'Rajdhani';
-    
-}
-form button {
+    font-family: "Rajdhani";
+  }
+  form button {
     padding: 15px;
-    background:#259650;
-    color:#fff;
+    background: #259650;
+    color: #fff;
     font-size: 16px;
     border: 0;
     outline: none;
@@ -296,5 +289,6 @@ form button {
     width: 150px;
     margin: 20px auto 0;
     border-radius: 20px;
-    font-family: 'Rajdhani';
-}
+    font-family: "Rajdhani";
+  }
+  

@@ -23,4 +23,20 @@ const closeModal = () => {
 openBtn.addEventListener('click', openModal)
 closeBtn.addEventListener('click', closeModal)
 
-
+function sendEmail() {
+    Email.send({
+      Host: "smtp.gmail.com",
+      Username: "jordanlind2017@gmail.com",
+      Password: "1029Qazmko0!",
+      To: "jordanlind2017@gmail.com",
+      From: document.getElementById("email").value,
+      Subject: "New Contact Enquiry",
+      Body:
+        "Name: " +
+        document.getElementById("name").value +
+        "<br> Email: " +
+        document.getElementById("email").value +
+        "<br> Message: " +
+        document.getElementById("note").value,
+    }).then((message) => alert("Message Sent!"));
+  }

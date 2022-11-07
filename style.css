@@ -312,7 +312,7 @@
     padding: 4rem;
     cursor: pointer;
     position: relative;
-    transform: rotate(-50%, -50%);
+    transform: rotate(360deg);
 }
   #projectText1:hover{
     animation: rotate 2s linear;

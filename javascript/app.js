@@ -9,6 +9,7 @@ console.log(closeBtn);
 const modal = document.getElementsByClassName('modal')
 
 
+
 //Function to change modal display to block
 //For loop to find display in modal css
 const openModal = () => {
@@ -20,6 +21,7 @@ const openModal = () => {
 const closeModal = () => {
     for (i = 0; i<modal.length; i++) {
     modal[i].style.display = 'none';
+    }
 }
 
 //event listener to open modal at the bottom!

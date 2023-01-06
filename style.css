@@ -12,7 +12,7 @@
   body {
     display: flex;
     overflow: auto;
-    background: linear-gradient(to right, #259650, #a2e1b7);
+    background: linear-gradient(to right, #EDC7B7, #EEE2DC);
     flex-direction: column;
     min-height: 100vh;
   }
@@ -22,7 +22,7 @@
   /* starting at the top of the page, with navigation bar */
   .topnav {
     margin: auto;
-    background: linear-gradient(to right, #259650, #a2e1b7);
+    background: linear-gradient(to right, #EDC7B7, #EEE2DC);
     width: 100%;
     height: 30%;
     display: flex;
@@ -42,7 +42,7 @@
   }
   /* When mouse is hovered over it changes the background to a gradient */
   .topnav a:hover {
-    background: linear-gradient(to right, #259650, #a2e1b7);
+    background: linear-gradient(to right, #EDC7B7, #EEE2DC);
     color: #fff;
   }
   /* home page name container */
@@ -62,9 +62,9 @@
     top: 50%;
     left: 50%;
     font-family: "Major Mono Display";
-    color: #a2e1b7;
+    color: #AC3B61;
     animation-name: change-color;
-    animation-duration: 8s;
+    animation-duration: 5s;
     animation-delay: 2s;
     animation-iteration-count: infinite;
     font-size: 50px;
@@ -79,16 +79,16 @@
   /* animation */
   @keyframes change-color {
     25% {
-      color: #12814b;
+      color: #EFA382;
     }
     50% {
-      color: #086c3f;
+      color: #BAB2B5;
     }
     75% {
-      color: #259650;
+      color: #123C69;
     }
     100% {
-      color: #a2e1b7;
+      color: #AC3B61;
     }
   }
   
@@ -124,7 +124,7 @@
     line-height: 1.5;
     text-align: center;
     color: rgb(0, 37, 17);
-    box-shadow: 0 4px 2px #086c3f;
+    box-shadow: 0 4px 2px #EDC7B7;
   }
   
   /* resume modal button */
@@ -139,24 +139,24 @@
   }
   #openResume {
     display: flex;
-    background: linear-gradient(to right, #259650, #a2e1b7);
+    background: linear-gradient(to right, #EDC7B7, #EEE2DC);
     font-family: "Major Mono Display";
     color: rgb(0, 37, 17);
     font-size: 22px;
     font-weight: bolder;
     border-radius: 5px;
     padding: 1rem;
-    box-shadow: 0 4px 2px #086c3f;
+    box-shadow: 0 4px 2px #EFA382;
     cursor: pointer;
     position: relative;
   }
   /* inside modal text and close button */
   .modal {
     background-color: rgba(0, 0, 0, 0.4);
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     z-index: 1;
     overflow: auto;
@@ -166,17 +166,17 @@
   .modal-textbox {
     display: flex;
     justify-content: center;
-    background-color: #a2e1b7;
-    height: 60vh;
+    background-color: #EDC7B7;
+    height: 75vh;
     width: 100vw;
     max-width: 100%;
     border-radius: 5px;
     margin: 10px auto;
     padding: 20px 35px;
-    box-shadow: 0 4px 2px #086c3f;
+    box-shadow: 0 4px 2px #EFA382;
   }
   iframe {
-    height:50vh;
+    height:70vh;
     width:100vw;
   }
   /* Jordans resume */
@@ -190,11 +190,12 @@
   /* close resume button */
   #closeResume {
     padding: 14px 18px;
-    background: linear-gradient(to right, #259650, #a2e1b7);
+    background: linear-gradient(to right, #EDC7B7, #EEE2DC);
     /* border: none; */
     outline: none;
     border-radius: 3px;
-    color: white;
+    color: rgb(1, 1, 1);
+    font-weight: bolder;
     font-family: "Major Mono Display";
     cursor: pointer;
   }
@@ -205,7 +206,7 @@
   }
   /* footers on all pages */
   .footer {
-    background-color: #12814b;
+    background: linear-gradient(to right, #EDC7B7, #EEE2DC);
     display: flex;
     position: sticky;
     flex-flow: column;
@@ -257,7 +258,7 @@
   }
   
   form {
-    background: #a2e1b7;
+    background: #123C69;
     display: flex;
     flex-direction: column;
     padding: 4vw;
@@ -278,7 +279,7 @@
   }
   form button {
     padding: 15px;
-    background: #259650;
+    background: #2ebc31;
     color: #fff;
     font-size: 16px;
     border: 0;
@@ -307,7 +308,7 @@
   
   #projectText1 {
     display: flex;
-    background: linear-gradient(to right, #259650, #a2e1b7);
+    background: #EFA382;
     font-family: "Rajdhani";
     color: rgb(0, 37, 17);
     font-size: 22px;
@@ -320,13 +321,13 @@
 }
   #projectText1:hover{
     transition: 1s ease-in-out;
-    background: rgb(0, 37, 17);
+    background: #123C69;
     color: white;
   }
 
   #projectText2 {
     display: flex;
-    background: linear-gradient(to right, #259650, #a2e1b7);
+    background: #EFA382;
     font-family: "Rajdhani";
     color: rgb(0, 37, 17);
     font-size: 22px;
@@ -339,6 +340,6 @@
 }
   #projectText2:hover{
     transition: 1s ease-in-out;
-    background: rgb(0, 37, 17);
+    background: #AC3B61;
     color: white;
   }

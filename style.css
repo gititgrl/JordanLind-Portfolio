@@ -316,7 +316,7 @@
     padding: 4rem;
     cursor: pointer;
     position: relative;
-    transform: rotate(360deg);
+    
 }
   #projectText1:hover{
     transition: 1s ease-in-out;
@@ -335,7 +335,7 @@
     padding: 4rem;
     cursor: pointer;
     position: relative;
-    transform: rotate(360deg);
+    
 }
   #projectText2:hover{
     transition: 1s ease-in-out;

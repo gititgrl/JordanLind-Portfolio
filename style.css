@@ -319,22 +319,26 @@
     transform: rotate(360deg);
 }
   #projectText1:hover{
-    animation: rotate 2s linear;
+    transition: 1s ease-in-out;
+    background: rgb(0, 37, 17);
+    color: white;
   }
-  @keyframes rotate {
-    0%{
-        transform: rotate(0deg);
-    }
-    25%{
-        transform: rotate(90deg);
-    }
-    50%{
-        transform: rotate(180deg);
-    }
-    75%{
-        transform: rotate(270deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
+
+  #projectText2 {
+    display: flex;
+    background: linear-gradient(to right, #259650, #a2e1b7);
+    font-family: "Rajdhani";
+    color: rgb(0, 37, 17);
+    font-size: 22px;
+    border-color: white;
+    border-radius: 5px;
+    padding: 4rem;
+    cursor: pointer;
+    position: relative;
+    transform: rotate(360deg);
+}
+  #projectText2:hover{
+    transition: 1s ease-in-out;
+    background: rgb(0, 37, 17);
+    color: white;
   }

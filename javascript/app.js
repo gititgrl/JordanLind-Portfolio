@@ -21,7 +21,6 @@ const closeModal = () => {
     for (i = 0; i<modal.length; i++) {
     modal[i].style.display = 'none';
 }
-}
 
 //event listener to open modal at the bottom!
 openBtn.addEventListener('click', openModal)
